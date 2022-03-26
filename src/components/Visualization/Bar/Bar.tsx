@@ -84,7 +84,7 @@ export const Bar: React.FC<BarProps> = (props: BarProps) => {
                 return (
                     <g key={i} transform={`translate(${(width + margin) * i}, 0)`}>
                         <title>
-                            "{names[i]}" has {v} cards
+                            "{names[i]}" has {v} {v == 1 ? "card" : "cards"}
                         </title>
                         {arr.map((index) => {
                             const y = 100 - index * (layerHeight + marginTop) - layerHeight;
